@@ -33,7 +33,11 @@ aby zapełnić bazę danych uruchom polecenie
 php bin/console fetch-data-from-api
 ```
 
+Linki
+
+```sh
 rejestracja - http://127.0.0.1:8000/register
 login - http://127.0.0.1:8000/login
 lista - http://127.0.0.1:8000/lista
 tutaj można przetestować api- http://127.0.0.1:8000/api
+```
