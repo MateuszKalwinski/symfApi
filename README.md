@@ -4,7 +4,7 @@
 ## Uruchomienie projektu
 
 Aplikacja oparta jest na frameworku Symfony 6. Proszę zapoznaj się z wymaganiami
-[Link text Here](https://link-url-here.org)
+[Wymagania](https://symfony.com/doc/current/setup.html#technical-requirements)
 
 Dla mnie było to PHP v8.1.6, Node v17.7.2, NPM v8.5.2, Composer v2.2.8
 
@@ -32,3 +32,8 @@ aby zapełnić bazę danych uruchom polecenie
 ```sh
 php bin/console fetch-data-from-api
 ```
+
+rejestracja - http://127.0.0.1:8000/register
+login - http://127.0.0.1:8000/login
+lista - http://127.0.0.1:8000/lista
+tutaj można przetestować api- http://127.0.0.1:8000/api
