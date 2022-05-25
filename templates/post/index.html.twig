@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Posty{% endblock %}
+{% block body %}
+
+    <div class="mt-5">
+        <div class="container">
+            <div class="jumbotron  bg-white p-5 rounded shadow">
+
+                <div class="main-content">
+                    {% for msg in app.session.flashBag.get('success') %}
+                        <div class="alert alert-success">
+                            {{ msg }}
+                        </div>
+                    {% endfor %}
+                </div>
+                
+                <h1 class="display-4">Lista wpisów</h1>
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nazwa użytkownika</th>
+                        <th scope="col">Tytuł</th>
+                        <th scope="col">Treść</th>
+                        <th scope="col">Usuń</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        {% for post in posts %}
+                            <tr>
+                                <td>{{ post.id }}</td>
+                                <td>{{ post.getUserName}}</td>
+                                <td>{{ post.title }}</td>
+                                <td>{{ post.body }}</td>
+                                
+                                <td><a class="text-danger" href="{{ path('app_post_delete',{id: post.id})}}">Usuń</a></td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

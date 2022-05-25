@@ -1,0 +1,11 @@
+$primary: darken(#428bca, 20%);
+
+// the ~ allows you to reference things in node_modules
+@import "~bootstrap/scss/bootstrap";
+
+.main-bg {
+  width: 100%;
+  height: calc(100vh - 56px);
+  background-size: cover;
+  background-repeat: no-repeat;
+}

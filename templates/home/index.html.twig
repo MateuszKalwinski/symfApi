@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Home{% endblock %}
+{% block body %}
+
+    <div class="main-bg d-flex align-items-center" style="background-image: url('../images/bg.jpg')">
+        <div class="container">
+            <div class="jumbotron  bg-white p-5 rounded shadow">
+                <h1 class="display-4">Aplikacja symfony!</h1>
+                <ul class="list-group list-group-flush mb-3">
+                    <li class="list-group-item">Pobieranie danych z API za pomocą komendy</li>
+                    <li class="list-group-item">Panel logowania</li>
+                    <li class="list-group-item">Panel rejestracji</li>
+                    <li class="list-group-item">Lista pobranych postów z możliwością usunięcia postu</li>
+                    <li class="list-group-item">REST API</li>
+                </ul>
+                <p class="lead">
+                    {% if app.user %}
+                        <a class="btn btn-primary btn-lg" href="{{ path('app_post') }}">Zobacz posty</a>
+                    {% else %}
+                        <a class="btn btn-primary btn-lg" href="{{ path('app_login') }}" role="button">Zaloguj</a>
+                        <a class="btn btn-primary btn-lg" href="{{ path('app_register') }}" role="button">Zarejestruj</a>
+                    {% endif %}
+                </p>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
