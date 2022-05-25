@@ -17,6 +17,8 @@
                 <p class="lead">
                     {% if app.user %}
                         <a class="btn btn-primary btn-lg" href="{{ path('app_post') }}">Zobacz posty</a>
+                        <a class="btn btn-primary btn-lg" href="{{ '/api' }}">API</a>
+
                     {% else %}
                         <a class="btn btn-primary btn-lg" href="{{ path('app_login') }}" role="button">Zaloguj</a>
                         <a class="btn btn-primary btn-lg" href="{{ path('app_register') }}" role="button">Zarejestruj</a>
