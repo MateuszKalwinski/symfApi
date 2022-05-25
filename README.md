@@ -27,7 +27,7 @@ wejdź na adres
 ```sh
 127.0.0.1:8000
 ```
-aby zapełnić bazę danych uruchom polecenie 
+aby zapełnić bazę danych postami uruchom polecenie 
 
 ```sh
 php bin/console fetch-data-from-api
