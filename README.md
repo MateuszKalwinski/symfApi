@@ -1,4 +1,4 @@
-# [SymfAPI]
+# SymfAPI
 
 
 ## Uruchomienie projektu
