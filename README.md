@@ -3,8 +3,7 @@
 
 ## Uruchomienie projektu
 
-Aplikacja oparta jest na frameworku Symfony 6. Proszę zapoznaj się z wymaganiami
-[Wymagania](https://symfony.com/doc/current/setup.html#technical-requirements)
+Aplikacja oparta jest na frameworku Symfony 6. Proszę zapoznaj się z [wymaganiami](https://symfony.com/doc/current/setup.html#technical-requirements)
 
 Dla mnie było to PHP v8.1.6, Node v17.7.2, NPM v8.5.2, Composer v2.2.8
 
